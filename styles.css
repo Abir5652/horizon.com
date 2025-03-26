@@ -151,7 +151,7 @@ header {
 .header__image img {
   max-width: 400px;
   position: absolute;
-  bottom: -10rem;
+  bottom: -5rem;
 }
 
 .collection__container {
@@ -210,23 +210,9 @@ header {
 
 .sale__content {
   position: absolute;
-  top: 100%;
-  left: 100%;
-  
-
-  transform: translate(-100%, -100%);
-  width: 100%;
-  color: var(--blake);
-  text-align: center;
-}
-
-.sale__contentt {
-  position: absolute;
-  top: 100%;
-  left: 100%;
-  
-
-  transform: translate(-100%, -100%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   color: var(--white);
   text-align: center;
@@ -242,7 +228,7 @@ header {
 }
 
 .sale__subtitle {
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 
 .sale__btn {
@@ -259,7 +245,7 @@ header {
   top: -100%;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: 1.5s;
+  transition: 0.5s;
 }
 
 .sale__card:hover::before {

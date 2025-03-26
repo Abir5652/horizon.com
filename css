@@ -42,40 +42,14 @@
   background-color: var(--text-dark);
 }
 
-/* עיצוב הכפתור */
 .btn {
-  background-color: #4CAF50; /* צבע רקע הכפתור */
-  color: white; /* צבע הטקסט של הכפתור */
-  padding: 10px 20px; /* ריווח פנימי בכפתור (מרחק בין הטקסט לדפנות הכפתור) */
-  border: none; /* מבטל את גבול הכפתור */
-  border-radius: 5px; /* פינות מעוגלות */
-  font-size: 16px; /* גודל הטקסט */
-  cursor: pointer; /* מוסיף סמן יד כאשר מרחפים על הכפתור */
-  text-align: center; /* ממרכז את הטקסט בתוך הכפתור */
-  display: inline-block; /* מאפשר שהכפתור יהיה בשורה עם אלמנטים אחרים */
+  padding: 0.75rem 2rem;
+  font-size: 0.8rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
 }
-
-/* עיצוב הקישור בתוך הכפתור */
-.btn a {
-  display: block; /* גורם לקישור לתפוס את כל השטח של הכפתור */
-  color: white; /* טקסט לבן */
-  text-decoration: none; /* מסיר קו תחתון מהקישור */
-  height: 100%; /* מוודא שהקישור יתפוס את כל גובה הכפתור */
-  width: 100%; /* מוודא שהקישור יתפוס את כל רוחב הכפתור */
-  line-height: 1.6; /* ממרכז את הטקסט בצורה טובה בתוך הכפתור */
-}
-
-/* במקרה של ריחוף (hover) על הכפתור */
-.btn:hover {
-  background-color: #45a049; /* צבע רקע בהיר יותר כשמרחפים על הכפתור */
-}
-
-/* במקרה של ריחוף (hover) על הקישור */
-.btn a:hover {
-  color: #f0f0f0; /* צבע בהיר יותר כשמרחפים על הקישור */
-}
-
-
 
 a {
   text-decoration: none;
@@ -581,93 +555,4 @@ header {
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  /* עיצוב כללי */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-size: 2em;
-}
-
-/* עיצוב לדסקטופ ולטאבלטים */
-@media screen and (min-width: 768px) {
-  .header__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .header__content {
-    flex: 1;
-  }
-
-  .header__image img {
-    width: 50%;
-  }
-
-  .nav__container {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .sale__grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-  }
-}
-
-/* עיצוב לניידים */
-@media screen and (max-width: 767px) {
-  header {
-    padding: 10px;
-  }
-
-  h1 {
-    font-size: 1.5em;
-  }
-
-  /* עיצוב ניווט לנייד */
-  .nav__container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .nav__links {
-    padding: 0;
-    list-style: none;
-  }
-
-  .nav__links li {
-    margin: 10px 0;
-  }
-
-  .header__image img {
-    width: 100%;
-    height: auto;
-  }
-
-  .sale__grid {
-    display: grid;
-    grid-template-columns: 1fr; /* 1 עמודה */
-    gap: 10px;
-  }
-
-  /* עיצוב כפתור "צור קשר" לנייד */
-  .btn {
-    width: 100%;
-    padding: 15px;
-    text-align: center;
-  }
-}
-
 }</html>

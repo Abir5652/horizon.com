@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>פרטי ההודעה</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            direction: rtl;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .details p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .thank-you-message {
+            background-color: #dff0d8;
+            color: #3c763d;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>תודה על יצירת הקשר!</h1>
+    <div class="thank-you-message">
+        <p>ההודעה שלך התקבלה בהצלחה. הנה פרטי ההודעה שלך:</p>
+    </div>
+    
+    <div class="details">
+        <p><strong>שם:</strong> <span id="name"></span></p>
+        <p><strong>דוא"ל:</strong> <span id="email"></span></p>
+        <p><strong>הודעה:</strong> <span id="message"></span></p>
+    </div>
+</div>
+
+<script>
+    // פונקציה לקרוא פרמטרים מה-URL
+    function getQueryParam(param) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get(param);
+    }
+
+    // כאשר הדף נטען, מציג את הנתונים שהוזנו
+    window.onload = function() {
+        const name = getQueryParam('name');
+        const email = getQueryParam('email');
+        const message = getQueryParam('message');
+
+        // אם הנתון חסר, מציג הודעת ברירת מחדל
+        document.getElementById('name').innerText = name ? name : 'לא צויין שם';
+        document.getElementById('email').innerText = email ? email : 'לא צויין אימייל';
+        document.getElementById('message').innerText = message ? message : 'לא צוינה הודעה';
+    };
+</script>
+
+</body>
+</html>
+

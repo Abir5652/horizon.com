@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -28,13 +28,13 @@
         <span><i class="ri-shopping-bag-2-line"></i></span>
       </div>
     </nav>
-    
+
     <header>
       <div class="section__container header__container">
         <div class="header__content">
+          
           <h1>  Horizon</h1>
-          <button class="btn"><a href="mailto:horizon.il@gmail.com">צור קשר</a></button>
-
+         <button class="btn">צור קשר</button>
         </div>
        
         <div class="header__image">
@@ -43,27 +43,29 @@
       </div>
     </header>
     <section class="section__container musthave__container">
-      <h2 class="section__title">תיק עבודות</h2>
-      <div class="musthave__nav">
-        <a href="#">באנרים ליוטיוב</a>
-      </div>
-      <div class="sale__grid">
-        <div class="sale__card">
-          <img src="assets/A1.jpeg" alt="" />
-          <div class="sale__contentt">
+    <h2 class="section__title">באנרים</h2>
+    <div class="musthave__nav">
+      <a href="#">באנרים ליוטיוב</a>
+    </div>
+        <div class="sale__grid">
+          <div class="sale__card">
+            <img src="assets/A1.jpeg" alt="" />
+            <div class="sale__contentt">
+              
+            </div>
           </div>
-        </div>
         <div class="sale__card">
           <img src="assets/A2.jpeg" alt="" />
           <div class="sale__contentt">
+            
           </div>
         </div>
         <div class="sale__card">
           <img src="assets/A10.jpeg" alt="" />
           <div class="sale__contentt">
+            
           </div>
         </div>
-      </div>
     </section>
 
     <section class="section__container musthave__container">
@@ -71,31 +73,38 @@
       <div class="musthave__nav">
         <a href="#">XS / S / M / L / XL / XXL</a>
       </div>
-      <div class="sale__grid">
-        <div class="sale__card">
-          <img src="assets/A5.jpeg" alt="" />
-          <div class="sale__content">
-            <h4 class="sale__subtitle"> Sweatshirt </h4>
-            <p class="sale__subtitle">- 55.90₪ -</p>
+          <div class="sale__grid">
+            <div class="sale__card">
+              <img src="assets/A5.jpeg" alt="" />
+              <div class="sale__content">
+                <h4 class="sale__subtitle"> Sweatshirt </h4>
+                
+                <p class="sale__subtitle">- 55.90₪ -</p>
+                
+              </div>
+            </div>
+          <div class="sale__card">
+            <img src="assets/A7.jpeg" alt="" />
+            <div class="sale__content">
+              <h4 class="sale__subtitle"> Sweatshirt </h4>
+              
+              <p class="sale__subtitle">- 55.90₪ -</p>
+              
+            </div>
           </div>
-        </div>
-        <div class="sale__card">
-          <img src="assets/A7.jpeg" alt="" />
-          <div class="sale__content">
-            <h4 class="sale__subtitle"> Sweatshirt </h4>
-            <p class="sale__subtitle">- 55.90₪ -</p>
-          </div>
-        </div>
-        <div class="sale__card">
-          <img src="assets/A6.jpeg" alt="" />
-          <div class="sale__content">
-            <h4 class="sale__subtitle"> Sweatshirt </h4>
-            <p class="sale__subtitle">- 55.90₪ -</p>
-          </div>
-        </div>
-      </div>
-    </section>
+          <div class="sale__card">
+            <img src="assets/A6.jpeg" alt="" />
+            <div class="sale__content">
+              <h4 class="sale__subtitle"> Sweatshirt </h4>
+              
+              <p class="sale__subtitle">- 55.90₪ -</p>
+              
+            </div>
+          </div> 
 
+
+        </section>
+  
     <hr />
 
     <footer class="section__container footer__container">
@@ -124,4 +133,3 @@
       </div>
     </div>
   </body>
-</html>
